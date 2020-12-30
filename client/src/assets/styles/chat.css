@@ -1,0 +1,135 @@
+.main-chat-container{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "onlineusers chat chat";
+  
+    background-color: white; 
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.chat-container{
+    grid-area: chat; 
+    background-color: white; 
+}
+
+.onlineusers{
+    grid-area: onlineusers; 
+    background-color: #3cb385;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container{
+    background-color: white; 
+    width: 40px;
+    height: 20px; 
+    color: black; 
+}
+
+.send-input{
+    border-radius: 6px; 
+    width: 45em; 
+    height: 3.5em;  
+    margin: 6px 0px 16px 40px; 
+    box-sizing: border-box;
+    padding-left: 10px; 
+}
+
+.send-btn{
+  width: 8em;
+  height: 3.5em; 
+  margin: 6px 0px 16px 0px; 
+  background-color: rgb(29, 218, 192); 
+  border-radius: 6px; 
+  border: none; 
+  margin-left: 10px; 
+
+}
+.input-container{
+    display: flex; 
+    flex-direction: row; 
+    position: fixed; 
+    bottom: 0; 
+    background-color: white; 
+    padding-top: 0; 
+}
+
+.message-container{
+    height: 100px; 
+    width: 150px; 
+}
+
+.window-container{
+    background-color: white; 
+    width: 100%; 
+    padding: 40px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.currentuser-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right{
+    background-color: rgb(43, 202, 181);
+    color: white; 
+    border-radius: 20px 20px 3px 20px;
+    margin: 10px 0;
+    padding: 10px 10px 2px 2px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.message{
+    margin-top: 10px; 
+}
+
+.otherusers-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: auto; 
+    align-items: flex-start;
+}
+.my-username, .other-username{
+    font-weight: 500; 
+    margin-bottom: -5px; 
+}
+
+.left{
+    background-color: white; 
+    box-shadow: 1px 1px 1px 2px #00000012;
+    opacity: 1;
+    border-radius: 3px 20px 20px 20px;
+    padding: 8px 15px;
+    margin: 10px 0; 
+}
+
+.my-username{ 
+    margin-right: 10px; 
+}
+
+.other-username{
+    
+    padding-right: 10px; 
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: "⭐ "
+}
